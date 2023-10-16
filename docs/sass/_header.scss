@@ -1,0 +1,8 @@
+.header {
+  padding: 1.6rem 0;
+  animation: fade-down 0.6s ease backwards;
+  .container {
+    justify-content: space-between;
+    align-items: center;
+  }
+}

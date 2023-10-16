@@ -1,0 +1,128 @@
+// font family
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap");
+
+// variables
+$color-white: rgb(250, 248, 246);
+$color-cream: rgb(243, 237, 231);
+$color-gray: rgb(73, 86, 109);
+$color-black: rgb(23, 35, 57);
+$color-orange: rgb(255, 168, 78);
+$color-hot-pink: rgb(203, 48, 227);
+$color-purple: rgb(160, 96, 255);
+
+$font-fam: "Epilogue", sans-serif;
+$base-font-size: 62.5%;
+
+$transition: all 0.3s ease;
+
+//  =============== reset
+
+html {
+  box-sizing: border-box;
+  font-size: $base-font-size;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.container {
+  width: 90%;
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+// ==== ===== heading
+.heading--main {
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 1.2;
+  margin-bottom: 1.6rem;
+}
+// ==== ===== heading
+
+// buttons
+.btn {
+  border-radius: 4px;
+  text-transform: capitalize;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  background-color: transparent;
+  transition: $transition;
+  border: 1.5px solid;
+  font-size: 1.2rem;
+  padding: 1rem;
+  transition: $transition;
+
+  &:hover,
+  &:focus {
+    background-color: $color-black;
+    color: $color-white;
+  }
+}
+
+.btn--cta {
+  @extend .btn;
+  background-color: $color-black;
+  color: $color-white;
+  padding: 1.5rem;
+
+  &:hover,
+  &:focus {
+  }
+}
+
+// ===================== end reset
+
+body {
+  background-color: $color-white;
+  color: $color-black;
+  font-family: $font-fam;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

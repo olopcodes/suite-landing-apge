@@ -1,0 +1,25 @@
+{
+  "name": "suite-landing-page",
+  "version": "1.0.0",
+  "description": "![Design preview for the Suite landing page coding challenge](./preview.jpg)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "compile": "sass --watch --no-source-map docs/sass/main.scss docs/css/style.css",
+    "build:compile": "sass --no-source-map docs/css/style.css docs/css/compiled.css",
+    "build:prefixes": "postcss docs/css/compiled.css --use autoprefixer --output docs/css/prefixed.css",
+    "build:optimize": "csso docs/css/prefixed.css --output docs/css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.16",
+    "csso-cli": "^4.0.2",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "sass": "^1.69.2"
+  }
+}
