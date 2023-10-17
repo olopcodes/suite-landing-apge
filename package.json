@@ -7,10 +7,10 @@
     "doc": "docs"
   },
   "scripts": {
-    "compile": "sass --watch --no-source-map docs/sass/main.scss docs/css/style.css",
+    "start": "sass --watch --no-source-map docs/sass/main.scss docs/css/style.css",
     "build:compile": "sass --no-source-map docs/css/style.css docs/css/compiled.css",
     "build:prefixes": "postcss docs/css/compiled.css --use autoprefixer --output docs/css/prefixed.css",
-    "build:optimize": "csso docs/css/prefixed.css --output docs/css/style.css"
+    "build": "csso docs/css/prefixed.css --output docs/css/style.css"
   },
   "keywords": [],
   "author": "",

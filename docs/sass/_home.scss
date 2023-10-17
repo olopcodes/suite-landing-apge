@@ -1,5 +1,93 @@
 .banner {
-  .banner__text {
+  &__text-content {
+    margin-bottom: 5rem;
+  }
+
+  &__text {
     margin-bottom: 1.6rem;
+  }
+
+  &__img {
+    height: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 5rem;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  &__stats {
+    text-align: center;
+  }
+
+  &__stat {
+    margin-bottom: 2.5rem;
+  }
+
+  &__number {
+    font-size: 3rem;
+    line-height: 1.1;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    color: $color-gray;
+    font-size: 1.6rem;
+    letter-spacing: 1.25px;
+  }
+}
+
+.review {
+  text-align: center;
+  color: $color-white;
+  position: relative;
+
+  &::after {
+    content: "";
+    background-color: $color-black;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    position: absolute;
+    z-index: -1;
+    height: 70%;
+  }
+
+  &__img {
+    // position: absolute;
+    margin-bottom: 12rem;
+  }
+
+  &__text-content {
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  &__quote {
+    margin-bottom: 1.6rem;
+  }
+
+  &__author {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+    line-height: 1;
+  }
+
+  &__author-title {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: $color-gray;
+    letter-spacing: 1px;
+    font-weight: 700;
   }
 }

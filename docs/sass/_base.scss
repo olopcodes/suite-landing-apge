@@ -84,7 +84,7 @@ section {
   transition: $transition;
   border: 1.5px solid;
   font-size: 1.2rem;
-  padding: 1rem;
+  padding: 1.5rem;
   transition: $transition;
 
   &:hover,
@@ -96,12 +96,19 @@ section {
 
 .btn--cta {
   @extend .btn;
+
+  padding: 1.75rem 2.25rem;
   background-color: $color-black;
   color: $color-white;
-  padding: 1.5rem;
 
   &:hover,
   &:focus {
+    background: linear-gradient(
+      140deg,
+      $color-purple 23%,
+      $color-hot-pink 54%,
+      $color-orange 83%
+    );
   }
 }
 
