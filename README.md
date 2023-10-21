@@ -51,7 +51,7 @@ Just really trying to go about it piece by piece. Get in the habit of building t
 
 ### What I learned
 
-Working on BEM names, css styles,
+Working on BEM names, css styles, working more with grid, positioning, SaSS, CSS animations
 
 ### Continued development
 
