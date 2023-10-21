@@ -1,11 +1,12 @@
 .footer {
-  padding: 7rem 0 1.6rem;
+  padding: 7rem 0 3rem;
   text-align: center;
   background-color: $color-cream;
   display: flex;
   flex-direction: column;
+  height: 250px;
+
   @media (min-width: 550px) {
-    height: 450px;
   }
   .container {
     @media (min-width: 550px) {
@@ -14,8 +15,6 @@
       justify-content: space-between;
       align-items: flex-end;
     }
-
-    // margin-top: auto;
   }
 
   &__img {

@@ -27,7 +27,10 @@
       <div class="container">
         <div class="banner__text-content">
           <h1 class="heading--main">
-            A <span class="bold">super solution</span> for your <span class="bold">business.</span>
+            A <span class="bold">super <span class="heading--main-special">
+                <img src="./assets/pattern-curved-line-1.svg" alt="curve line">
+                solution
+              </span></span> for your <span class="bold">business.</span>
           </h1>
           <p class="banner__text">
             Our marketing and sales automations help you scale your outreach to
@@ -36,7 +39,11 @@
           <button class="btn--cta">request beta access</button>
         </div>
         <div class="banner__img">
-          <img src="./assets/image-hero-landscape.png" alt="phone">
+
+          <picture>
+            <source media="(min-width: 800px)" srcset="./assets/image-hero-portrait.png" />
+            <img src="./assets/image-hero-landscape.png" alt="header image">
+          </picture>
         </div>
         <div class="banner__stats">
           <div class="banner__stat">
@@ -60,9 +67,15 @@
     <section class="review">
       <div class="container">
         <div class="review__img">
-          <img src="./assets/image-jeremy-small.png" alt="jeremy robinson">
-        </div>
+          <picture>
+            <source media="(min-width: 800px)" srcset="./assets/image-jeremy-large.png" />
+            <img src="./assets/image-jeremy-small.png" alt="jeremy robinson">
+          </picture>
 
+        </div>
+        <div class="review__img--2">
+          <img src="./assets/pattern-curved-line-2.svg" alt="">
+        </div>
         <div class="review__text-content">
           <h3 class="review__title">
             It just <span class="bold">works.</span>
